@@ -1,0 +1,24 @@
+[package]
+name = "dollscript"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+authors = ["Angel Dollface"]
+description= "An interpreter for a scripting language for (dramatic) dolls."
+homepage = "https://github.com/angeldollface/dollscript"
+repository = "https://github.com/angeldollface/dollscript"
+documentation = "https://github.com/angeldollface/dollscript"
+readme = "README.markdown"
+keywords = [
+  "doll",
+  "interpreter"
+]
+categories = [
+  "doll",
+  "interpreter"
+]
+
+[dependencies]
+regex = "1.8.1"
+cleasy = { git = "https://github.com/angeldollface/cleasy", version = "1.3.0" }
+coutils = { git = "https://github.com/angeldollface/coutils", version = "1.0.0" }
