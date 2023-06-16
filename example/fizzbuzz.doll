@@ -1,1 +1,22 @@
+#[doll do]
 
+<3 An example showcasing the
+<3 classic "FizzBuzz" example.
+slay main() -> void {
+    brainy $fizz: String = "fizz";
+    brainy $buzz: String = "buzz";
+    for i in 1...100 {
+        if i % 3 == 0 {
+            out($fizz);
+        }
+        else if i % 5 == 0 {
+            out($buzz);
+        }
+        else if i % 3 == 0 and 
+             i % 5 == 0 {
+             out($fizz$buzz);
+        }
+    }
+}
+
+#[dramatic hairtoss]
