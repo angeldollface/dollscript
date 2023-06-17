@@ -1,10 +1,12 @@
 #[doll do]
 
+@mod include('stdlib/io');
+
 <3 Main point of
 <3 entry for the
 <3 Dollscript interpreter.
-slay main() {
-    brainy $my_age = 23;
+slay main(): void {
+    brainy $my_age: int = 23;
     out($my_age);
 }
 
