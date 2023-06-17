@@ -1,0 +1,28 @@
+#[doll do]
+
+outfit HotMama {
+    item name: string,
+    item age: string,
+    item occupation: string
+}
+
+shop HotMama {
+    slay new(
+      name: ref name, 
+      age: ref age, 
+      occupation: ref occupation
+    ) -> HotMama {
+        toss HotMama {
+            name: deref name,
+            age: deref age,
+            occupation: deref occupation
+        };
+    }
+}
+
+slay main() -> void {
+    brainy $hotMama: HotMama = buy HotMama.new(ref "Cloe", ref 23, ref "doll");
+    out($hotMama);
+}
+
+#[dramatic hairtoss]
