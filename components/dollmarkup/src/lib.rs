@@ -1,12 +1,16 @@
 /*
 DOLLMARKUP by Alexander Abraham 
 a.k.a. "Angel Dollface".
-Licensed under the MIT license.
+Licensed under the GNU GPL v.3.0.
 */
 
 /// Declaring the "modules"
 /// directory as a module.
 pub mod modules;
+
+/// Re-exporting the
+/// error module.
+pub use modules::err::*;
 
 /// Re-exporting all APIs from
 /// the AST module.

@@ -1,7 +1,7 @@
 /*
 DOLLMARKUP by Alexander Abraham 
 a.k.a. "Angel Dollface".
-Licensed under the MIT license.
+Licensed under the GNU GPL v.3.0.
 */
 
 /// Imports the "Deserialize"

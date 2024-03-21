@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "components/lexer",
+    "components/dollmarkup"
+]
+
+[profile.release]
+lto = true
+strip = true
+opt-level = "z"
+codegen-units = 1

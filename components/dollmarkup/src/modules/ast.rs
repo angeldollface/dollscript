@@ -1,12 +1,12 @@
 /*
 DOLLMARKUP by Alexander Abraham 
 a.k.a. "Angel Dollface".
-Licensed under the MIT license.
+Licensed under the GNU GPL v.3.0.
 */
 
 use super::lexer::Token;
 use super::lexer::TokenType;
-use merrors::MandyError;
+use super::err::DMUErr;
 
 #[derive(Clone, Debug,PartialEq)]
 pub enum StmtType {
@@ -44,7 +44,7 @@ impl DollMarkupEntity {
 
 pub fn parse_tokens(
     tokens: &Vec<Token>
-) -> Result<Vec<DollMarkupEntity>, MandyError> {
+) -> Result<Vec<DollMarkupEntity>, DMUErr> {
     let mut result: Vec<DollMarkupEntity> = Vec::new();
     let mut token_pool: Vec<Token> = Vec::new();
     let tokens_length: usize = tokens.len();
@@ -126,8 +126,8 @@ pub fn parse_tokens(
     }
     if result.is_empty(){
         let e: String = format!("No valid token sequences detected.");
-        return Err::<Vec<DollMarkupEntity>, MandyError>(
-            MandyError::new(&e.to_string())
+        return Err::<Vec<DollMarkupEntity>, DMUErr>(
+            DMUErr::new(&e.to_string())
         );
     }
     else {}

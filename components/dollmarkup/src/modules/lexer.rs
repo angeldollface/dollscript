@@ -1,12 +1,12 @@
 /*
 DOLLMARKUP by Alexander Abraham 
 a.k.a. "Angel Dollface".
-Licensed under the MIT license.
+Licensed under the GNU GPL v.3.0.
 */
 
 /// Importing Mandy's error
 /// struct.
-use merrors::MandyError;
+use super::err::DMUErr;
 
 
 /// Defining an enum
@@ -77,7 +77,7 @@ impl Token {
 /// if this fails.
 pub fn tokenize(
     subject: &String
-) -> Result<Vec<Token>, MandyError>{
+) -> Result<Vec<Token>, DMUErr>{
     let mut result: Vec<Token> = Vec::new();
     let chars: Vec<char> = subject.chars().collect();
     let input_length: usize = chars.len();
@@ -119,8 +119,8 @@ pub fn tokenize(
     }
     if result.is_empty(){
         let e: String = format!("No valid tokens could be lexed from column 0 to {}", input_length);
-        return Err::<Vec<Token>, MandyError>(
-            MandyError::new(&e.to_string())
+        return Err::<Vec<Token>, DMUErr>(
+            DMUErr::new(&e.to_string())
         );
     }
     else {}
