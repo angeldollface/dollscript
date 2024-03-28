@@ -2,7 +2,7 @@
 
 ***A statically-typed, interpreted programming language for dramatic dolls. :dolls: :ribbon: :gear:***
 
-## STATUS :warning.
+## STATUS :warning:
 
 ***THIS PROJECT IS STILL HEAVILY WORK IN PROGRESS!***
 
