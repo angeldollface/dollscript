@@ -29,7 +29,7 @@ Since this language is inspired by the [Bratz dolls](https://www.bratz.com/), co
 - Integers aren't declared via the `int` keyword! They are declared via the `cash` keyword because the girls need cash to buy stuff.
 - Strings aren't declared via the `string` keyword! They are delcared via the `wisdom` keyword because the girls have much wisdom to share.
 - Floats aren't declared via the `float` keyword! They are declared via the `smart` keyword because the girls are the smartest around!
-- Structures aren#t declared via the `struct` keyword! They are declared via the `bag` keyword because every dolly needs a decent, reliable bag!
+- Structures aren't declared via the `struct` keyword! They are declared via the `bag` keyword because every dolly needs a decent, reliable bag!
 
 ### Variables
 
@@ -72,9 +72,55 @@ Every program needs to have a main point of entry and this is always done via th
 
 Coming soon!
 
+### Comments
+
+***Dollscript*** knows only one set of comment characters, the "<3" symbol. This can be used for inline and multi-line comments.
+
 ### Imports and Exports
 
-Coming soon!
+Imports and exports are very simple in ***Dollscript***, any type, any function or typefield is declared to be a public entity via the `slayy` keyword because anything that is fit to be public has to slay! To import modules, ***Dollscript*** uses either one of the following options:
+
+- To import a library:
+
+```Text
+@inspo "library";
+```
+
+- To import a file:
+
+```Text
+@inspo "./path/to/file.doll";
+```
+
+To export a module no special syntax is needed. All entities one would like to export need to be declared as being public.
+
+To export a set of modules, the following syntax would be used:
+
+```Text
+@collection with [
+    "module_one.dolls",
+    "module_two.dolls"
+    <3 etc.
+];
+```
+
+## USAGE :gear:
+
+### Running a program
+
+To create a ***Dollscript*** program, put your code in a file ending in `.doll`. Run the program using the ***Dollscript*** interpreter like this:
+
+```Text
+dolly do your_program.doll
+```
+
+### Linting a program
+
+To lint your program, use the ***Dollscript*** interpreter like this:
+
+```Text
+dolly glam your_program.doll
+```
 
 ## CODE SAMPLE :hammer_and_pick:
 
