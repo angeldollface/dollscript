@@ -1,0 +1,11 @@
+[app]
+name => "example"
+version => "0.1.0"
+license => "DSL-1"
+dependencies => []
+
+[permissions]
+networking => "ask"
+internet => "ask"
+filesystem => "ask"
+location => "ask"
