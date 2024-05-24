@@ -22,7 +22,9 @@ I've always been very interested in making my own programming language and decid
 - [ ] Implement a shell.
 - [ ] Make sure errors error the program.
 - [ ] Add unit tests.
-- [ ] Add CI to the project.
+- [ ] Make a logo.
+- [ ] Write documentation in the wiki.
+- [x] Add CI to the project.
 
 ## LANGUAGE INFORMATION :book:
 
