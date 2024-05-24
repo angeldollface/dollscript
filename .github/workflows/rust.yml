@@ -1,0 +1,17 @@
+on: [push]
+name: DOLLSCRIPT CI
+jobs:
+  build_and_test:
+    name: DOLLSCRIPT CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: "Version ninformation."
+        uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: -- --version
+     
