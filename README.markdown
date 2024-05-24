@@ -1,5 +1,7 @@
 # DOLLSCRIPT :dolls: :ribbon: :gear:
 
+![GitHub CI](https://github.com/angeldollface/dollscript/actions/workflows/rust.yml/badge.svg)
+
 ***A statically-typed, interpreted programming language for dramatic dolls. :dolls: :ribbon: :gear:***
 
 ## STATUS :warning:
