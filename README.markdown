@@ -18,7 +18,9 @@ I've always been very interested in making my own programming language and decid
 - [ ] Immplement a parser.
 - [ ] Implement a byte-code generator.
 - [ ] Implement a multi-threaded VM to run byte-code.
-- [ ] Implement a CLI.
+- [x] Implement a CLI.
+- [ ] Implement a shell.
+- [ ] Make sure errors error the program.
 - [ ] Add unit tests.
 - [ ] Add CI to the project.
 
