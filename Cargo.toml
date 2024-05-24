@@ -1,12 +1,26 @@
-[workspace]
-resolver = "2"
-members = [
-    "components/lexer",
-    "components/dollmarkup"
-]
+[package]
+name = "dollscript"
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE"
+authors = ["Angel Dollface"]
+description= "An interpreter for a statically-typed, interpreted programming language for dramatic dolls."
+homepage = "https://github.com/angeldollface/dollscript"
+repository = "https://github.com/angeldollface/dollscript"
+documentation = "https://github.com/angeldollface/dollscript/wiki"
+readme = "README.markdown"
+
+[dependencies]
+cliply = "0.2.0"
+coutils = { version="2.0.0", features=["filesystem"] }
+
+[[bin]]
+name = "dolly"
+path = "src/main.rs"
 
 [profile.release]
 lto = true
 strip = true
-opt-level = "z"
+opt-level = "s"
+panic = "abort"
 codegen-units = 1

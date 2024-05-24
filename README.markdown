@@ -8,7 +8,7 @@
 
 ## ABOUT :books:
 
-I've always been very interested in making my own programming language and decided to make something interesting in my favourite programming in the whole world, Rust. This language was designed by me and is inspired by my absolute favourite girlies in the world, the girls with a passion 4 fashion, the [Bratz dolls](https://bratz.com). This repository contains the source code for the ***Dollscript*** interpreter.
+I've always been very interested in making my own programming language and decided to make something interesting in my favourite programming in the whole world, Rust. The *Dollscript* language was designed by me and is inspired by my absolute favourite girlies in the world, the girls with a passion 4 fashion, the [Bratz dolls](https://bratz.com). This repository contains the source code for the ***Dollscript*** interpreter.
 
 ## TODO :gear:
 
@@ -17,17 +17,18 @@ I've always been very interested in making my own programming language and decid
 - [ ] Implement a byte-code generator.
 - [ ] Implement a multi-threaded VM to run byte-code.
 - [ ] Implement a CLI.
+- [ ] Add unit tests.
+- [ ] Add CI to the project.
 
 ## LANGUAGE INFORMATION :book:
 
-***Dollscript*** is statically-typed and interpreted language. Every datatype has to be explicitly declared!
-
+***Dollscript*** is a functional, statically-typed, and interpreted language. 
 ### Datatypes
 
 Since this language is inspired by the [Bratz dolls](https://www.bratz.com/), common datatypes have slightly more glam names.
 
 - Integers aren't declared via the `int` keyword! They are declared via the `cash` keyword because the girls need cash to buy stuff.
-- Strings aren't declared via the `string` keyword! They are delcared via the `wisdom` keyword because the girls have much wisdom to share.
+- Strings aren't declared via the `string` keyword! They are declared via the `wisdom` keyword because the girls have much wisdom to share.
 - Floats aren't declared via the `float` keyword! They are declared via the `smart` keyword because the girls are the smartest around!
 - Structures aren't declared via the `struct` keyword! They are declared via the `bag` keyword because every dolly needs a decent, reliable bag!
 
@@ -51,7 +52,7 @@ law x: cash = 0;
 x = 1; <3 This will not work, x is immutable.
 ```
 
-When the dollies decided something is important it is a law and therefore not changeable at all!
+When the dollies decide something is important, it is a law and therefore not changeable at all!
 
 ### Functions
 
@@ -110,7 +111,7 @@ To export a set of modules, the following syntax would be used:
 
 To create a ***Dollscript*** program, put your code in a file ending in `.doll`. Run the program using the ***Dollscript*** interpreter like this:
 
-```Text
+```Bash
 dolly do your_program.doll
 ```
 
@@ -118,8 +119,16 @@ dolly do your_program.doll
 
 To lint your program, use the ***Dollscript*** interpreter like this:
 
-```Text
+```Bash
 dolly glam your_program.doll
+```
+
+### Interactive shell
+
+To start the interactive interpreter, use the ***Dollscript*** interpreter like this:
+
+```Bash
+dolly speak
 ```
 
 ## CODE SAMPLE :hammer_and_pick:
@@ -155,4 +164,4 @@ shop main(): sleep  {
 ## NOTE :scroll:
 
 - *Dollscript :dolls: :ribbon: :gear:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
-- Licensed under the GNU GPL v3.
+- Licensed under the [DSL v1](https://github.com/angeldollface/doll-software-license).
