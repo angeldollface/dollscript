@@ -11,9 +11,13 @@ Licensed under the DSL v1.
 /// build a CLI app.
 use cliply::App;
 
+/// Importing the error-handling structure
+/// so errors can be hanlded.
+use super::err::DollscriptErr;
+
 /// Dollscript's CLI.
 pub fn cli() -> Result<(), DollscriptErr> {
-    let dolly: App = App::new(
+    let mut dolly: App = App::new(
         &"The Dollscript Interpreter",
         &"0.1.0",
         &"Angel Dollface"
@@ -63,4 +67,5 @@ pub fn cli() -> Result<(), DollscriptErr> {
     else {
         println!("{}", dolly.help_info());
     }
+    Ok(())
 }
