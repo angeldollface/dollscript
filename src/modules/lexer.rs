@@ -37,7 +37,10 @@ pub enum TokenType {
     TimesOperation,
     DivisionOperation,
     MinusOperation,
-    SleepVoid
+    SleepVoid,
+    CollectionExport,
+    ModifierFlex,
+    ModifierSingle
 }
 
 /// A data structure to hold all information
