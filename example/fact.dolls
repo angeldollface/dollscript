@@ -11,6 +11,7 @@ slayy shop new(root: cash, res: cash) for FactSummary: FactSummary {
 
 <3 A factorial function
 <3 returning an integer.
+#[juggle]
 slayy shop fact(limit: cash): cash {
     let res: cash = 0;
     law range_end: cash = limit + 1;
